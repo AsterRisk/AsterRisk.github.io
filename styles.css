@@ -1,0 +1,107 @@
+body{
+    background-color: #EEEEEE;
+    font-family: verdana;
+}
+
+.grid-container{
+    display: grid;   
+    grid-template-areas: 
+        'sidebar info info info info info info info'
+        'sidebar info info info info info info info'
+        'sidebar main-content main-content main-content main-content main-content main-content main-content'
+        'sidebar main-content main-content main-content main-content main-content main-content main-content'
+        'sidebar main-content main-content main-content main-content main-content main-content main-content'
+        'sidebar main-content main-content main-content main-content main-content main-content main-content'
+        'sidebar main-content main-content main-content main-content main-content main-content main-content'
+        'sidebar main-content main-content main-content main-content main-content main-content main-content';
+}
+
+.social-grid-container{
+    grid-template-areas:
+        'twitter instagram facebook linkedin';
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    /*background-color: #8855bb;*/
+    background-color: #a30749;
+    background-color: #8855bb;
+    background-color: #a30749;
+    font-family: times-new-roman;
+    grid-area: info;
+    text-align: center;
+    border: 5px solid #CCCCFF;
+    float: right;
+    
+}
+
+.name{
+    text-align: center;
+}
+.phone{
+    color: whitesmoke;
+}
+.sidebar{
+    padding: 20px;
+    width: 220px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    grid-area: sidebar;
+    background-color: #a30749;
+    /*background-color: #8855bb;*/
+    overflow-x: hidden;
+    border: 5px solid #CCCCff;
+}
+.work-exp{
+    text-align: left;
+}
+
+.exp-table{
+    display: grid;
+    grid-template-areas: 'work-year work-detail' 
+                          'work-year notes';
+    text-align: center;
+}
+
+.sidebar a{
+    color: whitesmoke;
+}
+
+.sidebar-label{
+    padding: -10px;
+}
+
+.me{
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.notes{
+    font-family:serif;
+}
+
+.logo{
+    border-radius: 40%;
+    padding: 5px;
+}
+
+.main-content h2{
+    background-color: tan;
+    padding: 10px;
+}
+
+.main-content
+{
+    padding:10px;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-areas: 'skill1 skill2';
+}
